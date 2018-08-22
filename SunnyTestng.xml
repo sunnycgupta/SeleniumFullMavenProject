@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="Suite" parallel="tests" thread-count="2">
+  <test name="FirefoxTest">
+<paramter name="sBrowser" value="chrome" />
+    <classes>
+      <class name="com.sunny.Test1Sun"/>
+  
+    </classes>
+  </test>
+  <test name="ChromeTest">
+  <paramter name="sBrowser" value="edge" />
+    <classes>
+      <class name="com.sunny.Test1Sun"/>
+     
+    </classes>
+  </test>
+   <!-- Test -->
+</suite> <!-- Suite -->

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="2" name="Failed suite [Suite]" parallel="tests">
+  <test thread-count="2" name="ChromeTest(failed)" parallel="tests">
+    <parameter name="sBrowser" value="edge"/>
+    <classes>
+      <class name="com.sunny.Test1Sun">
+        <methods>
+          <include name="tc_2"/>
+          <include name="tc_1"/>
+          <include name="launchBrowser"/>
+        </methods>
+      </class> <!-- com.sunny.Test1Sun -->
+      <class name="com.sunny.Test2Sun">
+        <methods>
+          <include name="TC_3"/>
+        </methods>
+      </class> <!-- com.sunny.Test2Sun -->
+    </classes>
+  </test> <!-- ChromeTest(failed) -->
+  <test thread-count="2" name="FirefoxTest(failed)" parallel="tests">
+    <parameter name="sBrowser" value="chrome"/>
+    <classes>
+      <class name="com.sunny.Test2Sun">
+        <methods>
+          <include name="TC_3"/>
+        </methods>
+      </class> <!-- com.sunny.Test2Sun -->
+    </classes>
+  </test> <!-- FirefoxTest(failed) -->
+</suite> <!-- Failed suite [Suite] -->
