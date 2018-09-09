@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="SunnyBro">
+
+<listeners>
+<listener class-name="listener.Listeners"/>
+</listeners>
+  <test  name="KiddanTussi1">
+  
+ <parameter name="url"  value="google.com"/>
+ <parameter name="pwd"  value="sunny gupta"/>
+    <classes>
+    
+    <class name="sunnyTestng.ClassOne"/>
+    <class name="sunnyTestng.ClassTwo"/> 
+     <class name="sunnyTestng.ClassThree"/>
+        </classes>
+  </test> <!-- Test -->
+  
+
+  
+</suite> <!-- Suite -->

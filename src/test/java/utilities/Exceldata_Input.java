@@ -1,15 +1,15 @@
-package Utilities;
+package utilities;
 
 import java.io.File;
 import java.io.FileInputStream;
 
 
 
-public class Exceldata_Input2 {
-	/*public static XSSFWorkbook wb;
+public class Exceldata_Input {
+/*	public static XSSFWorkbook wb;
 	public static XSSFSheet sheet;
 	 
-	public Exceldata_Input2(String excelPath){
+	public Exceldata_Input(String excelPath){
 	try{
 	File src=new File(excelPath);
     FileInputStream fis=new FileInputStream(src);

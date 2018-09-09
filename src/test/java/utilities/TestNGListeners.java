@@ -1,11 +1,16 @@
-package Utilities;
+package utilities;
 
+import java.io.File;
+
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
+import org.openqa.selenium.io.FileHandler;
 import org.testng.ITestContext;
 import org.testng.ITestListener;
 import org.testng.ITestResult;
-
+import seleniummaven.*;
 public class TestNGListeners implements ITestListener {
-
+	ChromeUpdate chromeUpdate=new ChromeUpdate();
 	@Override
 	public void onFinish(ITestContext arg0) {
 		// TODO Auto-generated method stub
@@ -28,22 +33,26 @@ public class TestNGListeners implements ITestListener {
 	public void onTestFailure(ITestResult result) {
 		System.out.println("Testcase Failed  "+result.getName());
 		
-	}
-
-	@Override
-	public void onTestSkipped(ITestResult result) {
-		System.out.println("Testcase skipped unknowningly "+result.getName());
+		chromeUpdate.getScreenshot(result.getName());
+			
 		
 	}
 
+
 	@Override
-	public void onTestStart(ITestResult arg0) {
+	public void onTestSuccess(ITestResult arg0) {
 		// TODO Auto-generated method stub
 		
 	}
 
 	@Override
-	public void onTestSuccess(ITestResult arg0) {
+	public void onTestStart(ITestResult result) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void onTestSkipped(ITestResult result) {
 		// TODO Auto-generated method stub
 		
 	}

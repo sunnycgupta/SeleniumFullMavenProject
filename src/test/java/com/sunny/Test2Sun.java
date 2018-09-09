@@ -10,8 +10,9 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.phantomjs.PhantomJSDriver;
 import org.testng.annotations.Test;
 
-import Utilities.Get_Screenshot;
+
 import net.sourceforge.htmlunit.corejs.javascript.tools.debugger.Main;
+import utilities.Get_Screenshot;
 
 public class Test2Sun {
 	@Test

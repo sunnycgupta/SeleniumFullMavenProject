@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [SunnyBro]">
+  <listeners>
+    <listener class-name="listener.Listeners"/>
+  </listeners>
+  <test thread-count="5" name="KiddanTussi1(failed)">
+    <classes>
+      <class name="seleniummaven.ChromeUpdate">
+        <methods>
+          <include name="runner"/>
+        </methods>
+      </class> <!-- seleniummaven.ChromeUpdate -->
+    </classes>
+  </test> <!-- KiddanTussi1(failed) -->
+</suite> <!-- Failed suite [SunnyBro] -->

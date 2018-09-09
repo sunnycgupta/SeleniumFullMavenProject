@@ -4,7 +4,20 @@
   <artifactId>SunnySeleniumPratice</artifactId>
   <version>0.0.1-SNAPSHOT</version>
   
+  <repositories>
+    <repository>
+      <id>codelds</id>
+      <url>https://code.lds.org/nexus/content/groups/main-repo</url>
+    </repository>
+  </repositories>
   <dependencies>
+  <dependency>
+    <groupId>com.oracle</groupId>
+    <artifactId>ojdbc6</artifactId>
+    <version>11.2.0.3</version>
+</dependency>
+
+
 <dependency>
  <groupId>org.seleniumhq.selenium</groupId>
  <artifactId>selenium-java</artifactId>
@@ -73,7 +86,7 @@
 <dependency>
     <groupId>com.google.guava</groupId>
     <artifactId>guava</artifactId>
-    <version>25.1-jre</version>
+   <version>26.0-jre</version>
 </dependency>
 <dependency>
     <groupId>com.codeborne</groupId>
@@ -91,6 +104,29 @@
     <artifactId>selenium-remote-driver</artifactId>
     <version>3.9.0</version>
 </dependency>
+<!-- https://mvnrepository.com/artifact/org.apache.poi/poi -->
+<dependency>
+    <groupId>org.apache.poi</groupId>
+    <artifactId>poi</artifactId>
+    <version>3.17</version>
+</dependency>
+<!-- https://mvnrepository.com/artifact/org.apache.poi/poi-ooxml -->
+<dependency>
+    <groupId>org.apache.poi</groupId>
+    <artifactId>poi-ooxml</artifactId>
+    <version>3.17</version>
+</dependency>
+<dependency>
+    <groupId>org.apache.logging.log4j</groupId>
+    <artifactId>log4j-api</artifactId>
+    <version>2.11.1</version>
+  </dependency>
+  <dependency>
+    <groupId>org.apache.logging.log4j</groupId>
+    <artifactId>log4j-core</artifactId>
+    <version>2.11.1</version>
+  </dependency>
+
 
   </dependencies>
   <build>
@@ -120,6 +156,12 @@
 				
 			</plugin>
 		</plugins>
+		<resources>
+		<resource>
+            <directory>src/main/resources</directory>
+            <filtering>true</filtering>
+        </resource>
+        </resources>
 	</build>
 	
 
