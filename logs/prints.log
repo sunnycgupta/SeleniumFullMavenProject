@@ -3,3 +3,5 @@
 05:51:57.724 [main] INFO  seleniummaven.ChromeUpdate - Start Driver
 05:52:04.158 [main] INFO  seleniummaven.ChromeUpdate - Start Site
 05:52:16.383 [main] INFO  seleniummaven.ChromeUpdate - Start sign
+17:34:16.201 [main] INFO  seleniummaven.ChromeUpdate - Starting Browser
+17:34:21.621 [main] INFO  seleniummaven.ChromeUpdate - value  Browser

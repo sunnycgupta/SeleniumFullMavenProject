@@ -2,16 +2,16 @@
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="26783" started-at="2018-09-09T11:27:07Z" finished-at="2018-09-09T11:27:34Z">
+  <suite name="Default suite" duration-ms="437" started-at="2018-10-13T22:03:02Z" finished-at="2018-10-13T22:03:03Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="26783" started-at="2018-09-09T11:27:07Z" finished-at="2018-09-09T11:27:34Z">
-      <class name="seleniummaven.FirefoxUpdate">
-        <test-method status="PASS" signature="runner()[pri:0, instance:seleniummaven.FirefoxUpdate@545997b1]" name="runner" duration-ms="26729" started-at="2018-09-09T11:27:07Z" finished-at="2018-09-09T11:27:34Z">
+    <test name="Default test" duration-ms="437" started-at="2018-10-13T22:03:02Z" finished-at="2018-10-13T22:03:03Z">
+      <class name="utilities.MysqlConnection">
+        <test-method status="PASS" signature="mySqlConnectivity()[pri:0, instance:utilities.MysqlConnection@5c072e3f]" name="mySqlConnectivity" duration-ms="409" started-at="2018-10-13T22:03:02Z" finished-at="2018-10-13T22:03:03Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- runner -->
-      </class> <!-- seleniummaven.FirefoxUpdate -->
+        </test-method> <!-- mySqlConnectivity -->
+      </class> <!-- utilities.MysqlConnection -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

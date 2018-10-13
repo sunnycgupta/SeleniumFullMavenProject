@@ -19,17 +19,18 @@ public class MysqlConnection {
 		
 		try {
 			Class.forName("com.mysql.jdbc.Driver");
-			Connection con= DriverManager.getConnection("jdbc:mysql://localhost:3306/testbase", "root", "root");
+			Connection con= DriverManager.getConnection("jdbc:mysql://localhost:3306/wwwqa", "root", "password");
 			Statement statement=con.createStatement();
-			ResultSet rs=statement.executeQuery("Select * from empinfo");
+			ResultSet rs=statement.executeQuery("Select * from employeInfo");
 			while(rs.next())
 			{
-				String empno=rs.getString(1);
+				
+				int empno=rs.getInt(1);
 				String empname=rs.getString(2);
-				String empsurname=rs.getString(3);
+				int empsurname=rs.getInt(3);
 				String empage=rs.getString(4);
-				String emplocation=rs.getString(5);
-				System.out.print("First record :"+empno+" " +empname+" "+empsurname+" "+empage+" "+emplocation +"\n");
+				
+				System.out.print("First record :"+empno+" " +empname+" "+empsurname+" "+empage+" " +"\n");
 			}
 			con.close();
 			
