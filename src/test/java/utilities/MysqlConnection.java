@@ -25,12 +25,12 @@ public class MysqlConnection {
 			while(rs.next())
 			{
 				
-				int empno=rs.getInt(1);
-				String empname=rs.getString(2);
-				int empsurname=rs.getInt(3);
-				String empage=rs.getString(4);
+				int eid=rs.getInt("eid");
+				String ename=rs.getString("ename");
+				int esalary=rs.getInt("esalary");
+				String elocation=rs.getString("elocation");
 				
-				System.out.print("First record :"+empno+" " +empname+" "+empsurname+" "+empage+" " +"\n");
+				System.out.print("Records :"+eid+" " +ename+" "+esalary+" "+elocation+" " +"\n");
 			}
 			con.close();
 			
